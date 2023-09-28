@@ -1,0 +1,47 @@
+*{
+    color:white;
+}
+
+p {
+    font-size: 20px;
+    text-align: justified;
+
+    text-indent: 50px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: red;
+    font-size: 70px;
+}
+
+h2{
+    color: blue;
+    text-decoration: underline;
+    font-size: 35;
+}
+
+a{
+    color:blue;
+}
+
+ol{
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 20px;
+    text-indent: 20px;
+
+}
+
+img {
+    margin-left: 50px;
+}

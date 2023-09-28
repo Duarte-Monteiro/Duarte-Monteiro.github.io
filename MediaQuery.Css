@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+h2{
+    padding: 15px;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    transition: .5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.menu a,ol {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    color: rgb(13, 188, 211);
+    transition: .5s
+    
+}
+ol{
+    margin: 0;
+}
+
+li {
+    padding: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.menu li:hover, button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid red;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    color:black;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    display: flex;
+
+}
+
+button:focus ~nav{
+    width: 250px;
+}
+
+/*Para celualr*/
+@media (max-width: 480px) {
+    nav {
+        width: 0px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    button{
+        display: flex;
+    }
+}
+

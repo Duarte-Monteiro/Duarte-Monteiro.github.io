@@ -1,0 +1,36 @@
+@media (min-width:100px and max-width:300px){
+
+    PODE SER @MEDIA ALL, DA NO MESMO, NESSE MEXE EM TUDO SEM EXEÇÃO DESDE QUE ESTEJA NOS PX COLOCADOS,
+    NESSE EXEMPLO TEM QUE SER MAIOR QUE 100PX(PQ É O MININMO) ATÉ 300PX(PQ É O MAXIMO),
+    ESSAS CONDIÇÕES PODEM SER USADOS EM TODOS OS OUTROS
+}
+
+@media screen and (max-width:500px){
+
+    MEXE NA TELA EM SE, TODAS AS TELAS ATÉ 500PX VÃO SEGUIR AS REGRAS ESCRITAS AQUI
+}
+
+@media print and (max-width:600px){
+
+    MEXE NA IMPREÇÃO, QUANDO APERTA CTRL P, E FOR ATE 600PX VAI SEGUIR AS REGRAS ESCRITAS AQUI.
+}
+
+@media (orientation: landscape){
+
+    MEXE COM A ORIENTAÇÃO DO DISPOSITIVO, SE ESTIVER "LANDSCAPE"(PAISAGEM) VAI SEGRIR A REGRA ESCRITA AQUI
+}
+
+
+TAMANHOS DAS TELAS[
+     
+    celulares{ 0 - 480}
+    tablet{ 480px - 768px}
+    telas menores, laptops { 768px- 1024px}
+    desktop {1054px - 1200px }
+    telas maiores, tvs { 1200px - +}
+]
+
+
+APESAR DO "E" SER O "AND" O "OU" É USADO A "," 
+A ORDEM IMPORTA UM PODE SOBRESCREVER O OUTRO DEPENDENDO DELA
+

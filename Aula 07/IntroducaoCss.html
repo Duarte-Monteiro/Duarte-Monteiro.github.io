@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Atividade 07 CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body bgcolor="black">    
+    <h1>
+        Introdução ao CSS
+    </h1>
+
+    <h2>
+        Índice
+    </h2>
+    <h3>
+        <ul type="1">
+            <li><a href="#DefinicaoDeCSS">Definição de CSS</a></li>
+            <li><a href="#Regras">Regras </a></li>
+            <li><a href="#SintaxeDoCSS">Sintaxe do CSS </a></li>
+            <li><a href="#TiposDeSeletor">Tipos de seletor </a></li>
+            <li><a href="#PadroesASeguirParaCriarIDeClasse">Padões a seguir para criar id e classe</a></li>
+        </ul>
+    </h3>
+
+    <h2>
+        <a name= "DefinicaoDeCSS">Definição de CSS:</a>
+    </h2>
+
+    <p>
+        Cascading Style Sheets (CSS), é utilizado para controlar a apresentação de documentos de marcação, ou seja,
+        atavéz de marcações é possivel predefinir um padrão de regras para a aparência das tags do documento <strong>HTML</strong> .
+    </p>
+
+    <h2>
+        <a name="Regras">Regras:</a>
+    </h2>
+    
+    <p>
+        As regras do CSS podem ser aplicadas de três formas diferentes:
+
+        <ul>
+            <li><strong>Inline:</strong> Dessa maneira é aplicado diretamente no documento HTML.</li>
+            <li><strong>Incorporado:</strong> Usa a tag &lt Style &gt dentro do <i>head</i>  para aplicar várias regras dentro do HTML </li>
+            <li><strong>Folha de estilos externa:</strong> Utiliza um documento.css separado que é vinculodo atravéz da tag "link" dentro do <i>head</i>,
+                 como por exemplo: &lt link rel="stylesheet" href="estilos.css" &gt, para deixar todas as regras organizadas em um unico doc e não poluir o código HTML. </li>
+        </ul>
+    </p>
+
+    <p>
+        Outro detalhe importante é que os estilos são aplicados de maneira cascata, ou seja, vai seguindo linha por linha para aplicar.
+    </p>
+
+    <h2>
+       <a name="SintaxeDoCSS">Sintaxe do CSS:</a>
+    </h2>
+    <p>
+        A Sintaxe do CSS é feita da seguinte maneira:
+    </p>
+    <figure>
+        <img src="imagens\SintaxeCSS.png" >
+        <figcaption>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fonte: <a href="https://youtu.be/ZMCemNmB_v0?si=F9zvD25zgjUcAEGi">https://youtu.be/ZMCemNmB_v0?si=F9zvD25zgjUcAEGi</a></figcaption>
+    </figure>
+    <p>
+        Onde o <strong><i>seletor </i></strong> é a tag que vai ser afetada pela regra do CSS,
+         a <strong><i>propriedade</i></strong> é a regra que vai ser aplicada 
+         e o <strong><i>valor</i></strong> vai ser qual especificação da regra quer aplicar que pode ser desde a cor até o tamanho.<br>
+         Como por exemplo:
+    
+    </p>
+    <img src="imagens\ExDeSintaxe.png" width="400px">.
+    <p>
+        Onde o "p" restringem as regras para todas as tag &lt p &gt o "fotn-size: 20px" é o tamanho da fotne, o "text-aling: justified" é o alinhamento do texto, 
+        "color: white" é a cor do texto para branco e por ultimo "text-indente: 50px" é o tamnho do espaço  antes do texto.
+    </p>
+
+    <h2>
+       <a name="TiposDeSeletor">Tipos de seletor:</a>
+    </h2>
+    <p>
+        Existem 4 tipos de seletores: Seletor Universal, Seletor de Tipo, de Classe e o de ID.
+        <ol>
+            <li><strong>Seletor Universal: </strong>Faz com que tudo siga as regras descritas. Exemplo:  *{color: white;}, deixa todo texto branco. </li>
+            <br>
+            <li><strong>Seletor de Tipo: </strong>Escolhe apenas uma tag para seguir aquelas regras como a imgagem anterior. </li>
+            <br>
+            <li><strong>Seletor de Casse: </strong>Escolhe apenas as tags que tanham uma classe e pode ser aplicada ou em uma classe como: .vermelho{color: red}, 
+                isso faz com que todas as tags com essa classe fiquem verdes, ou também pode ser definido de maneira mais especifica: h1.azul{color: blue} 
+                assim só essa tag com essa class que é aplicado a regra.  </li>
+            <br>
+            <li><strong>Seletor de ID: </strong>Escolhe atravez do id para aplicar as regras como por exemplo: #corBranca{color: white}, ou de maneira mais especifica: h2#corVermelha{color: red}</li>
+
+        </ol>
+    </p>
+
+    <h2>
+        <a name= "PadroesASeguirParaCriarIDeClasse">Padões a seguir para criar ID e classe:</a>
+    </h2>
+    <ol>
+        <li>Não usar espaços em branco</li>
+        <li>Não empregar caracteres especiais</li>
+        <li>CSS é case-sensitive, ou seja, se a letra for maiscula já e lido como diferente da minuscula</li>
+    </ol>
+
+</body>
+
+</html>

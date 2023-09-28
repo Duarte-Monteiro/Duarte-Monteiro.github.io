@@ -1,0 +1,40 @@
+Todas essas tag são semanticas, ou seja, possuem significado próprio.
+
+<header></header> cabeçalho da pagina em se, esse é diferente do <head> no <header> faz parte do corpo da página;
+
+<nav></nav> é o menu principal da página;
+
+<aside></aside menu auxiliar, ou quaquer ou tro menu;
+
+<section></section> seção do site fica no corpo principal, utiliza o <article></article>
+	<article></article> separa em parte as seções
+		Ex: uma seção de esportes divida em aticulos de handboll, futsal, etc.
+
+<footer></footer> doapé do site
+
+_________________________________________________________________________________________________________________
+
+Com o display é possivel tratar uma linha como bloco display:block
+
+O p é tratado como bloco
+
+p{
+	padding: 10px 
+	->é a distancia do conteudo referente a margem interna, com um valor de todos os lados fica igual, com 2 valores o 1 é do top e de baixo o 2 é da esquerda e da direita, 4 valores pega o sentido hórario começando pela direita.
+	
+	margin: 2px
+	-> é a distancia do bloco referente ao externo, ou seja, a distancia q o "p" vai fia dos outros em volta.
+
+	borge
+	->cria uma borda para o bloco
+
+	font-family: "Arial", "Times new roma"
+	-> ele da prioridade pro Arial mas se no pc do usuario n tiver pega a proxima, se não tiver nenhuma faz o padrão mas pode dar problema.
+}
+
+O img é uma linha
+img{
+	display: block
+	margin: 0 auto 
+	-> centraliza o blocco
+}
