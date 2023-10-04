@@ -1,0 +1,56 @@
+
+div{
+    color: white;
+    padding: 10px; 
+}/* todas as div tem um espaço de tudo de 10px, muda as cores dos texto para branco */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, blue, red);
+   
+}/* todo o body tem uma fonte arial se não funionar tenta os seguintes da lista, coloca um fundo com degrade */
+
+button{
+    color: black;
+    background-color: white;
+}
+
+.principal{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(122, 2, 126, 0.4);
+    
+}/* faz todos com a class principal ocupar so o espaço nescessario, depois centraliza a div no centro da pagina, depois coloca um fundo meio transparente */
+
+fieldset{
+    border: 5px solid color-mix(in srgb, red 50%, blue );
+}/* muda a borda do fieldset */
+
+legend{
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to left, blue, red); 
+    border-radius: 10px;
+}/* coloca alinhado o texto no centro, cria um espaçamento geral de 10px, coloca uma cor de fundo misturada, arredonda as bordas */
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline:none;
+    font-size: 15px;
+    width: 100%;
+    padding: 0px;
+    letter-spacing: 2px;
+
+}/* tirou o fundo, tirou a borda, adiciona uma borda na parte de baixa de 1px de cor branca, disfarça o quadrado q aparece quando clica 
+    coloca a fonte do tamanho 15px, faz a largura preencher 100%*/
+
+
+
+.entrada:focus ~.animacao {
+    top: -20px;
+}
+

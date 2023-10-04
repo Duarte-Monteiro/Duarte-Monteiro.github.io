@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas 10</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <nav class="principal">
+        <form>
+            <fieldset>
+                <legend><b>Fórmulario de Jogadores</b></legend>
+
+                <div class="input">
+                    <label class="animacao" for="#nome" >Nome</label>
+                    <input class="entrada" type="text" name="nome" id="#nome" required>
+                </div>
+
+                <div class="input">
+                    <label class="animacao" for="#sobrenome" >Sobrenome</label>
+                    <input class="entrada" type="text" name="sobrenome" id="#sobrenome" required>
+                </div>
+
+                <div>
+                    <p>Gênero</p>
+                    <label for="#masculino" >Masculino</label>
+                    <input  type="radio" id="#masculino" name="genero" required>
+
+                    <label for="#feminino" >Feminino</label>
+                    <input  type="radio" id="#feminino" name="genero" required>
+
+                    <label for="#outros">Outros</label>
+                    <input  type="radio" id="#outros" name="genero" required>
+                </div>
+
+                <div class="input">
+                    <label for="#nascimento" class="animacao">Data de nascimento</label>
+                    <input class="entrada" type="date" name="nascimento" id="#nascimento" required>
+                </div>
+
+                <div class="input">
+                    <label for="#endereco" class="animacao">Endereço</label>
+                    <input class="entrada" type="text" name="endereco" id="#endereco" required>
+                </div>
+
+                <div class="input">
+                    <label for="#cidade" class="animacao">Cidade</label>
+                    <input class="entrada" type="text" name="cidade" id="#cidade" required>
+                </div>
+
+                <div class="input">
+                    <label for="#estado" class="animacao">Estado</label>
+                    <input class="entrada" type="text" name="estado" id="#estado" required>
+                </div>
+
+                <div class="input">
+                    <label for="#email" class="animacao">Email</label>
+                    <input class="entrada" type="email" name="email" id="#email" required>
+                </div>
+
+                <div class="input">
+                    <label for="#telefone"class="animacao">Telefone</label>
+                    <input class="entrada" type="tel" name="telefone" id="#telefone" required>
+                </div>
+
+                <div>
+                    <p>Momento do dia dispoinivel</p>
+                    <label for="#matutino">Matutino</label>
+                    <input type="checkbox" id="#matutino" name="matutino" >
+
+                    <label for="#vespertino">Vespertino</label>
+                    <input type="checkbox" id="#vespertino" name="vespertino" >
+
+                    <label for="#noturno">Noturno</label>
+                    <input type="checkbox" id="#noturno" name="noturno" >
+                </div>
+
+                <input type="submit" nome="enviar" id="#enviar">
+
+            </fieldset>
+
+        </form>
+    </nav>
+</body>
+
+</html>
