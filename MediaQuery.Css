@@ -1,17 +1,16 @@
 body {
     margin: 0;
     background-color: white;
-}
+} /* fez com q o body não tivesse margem e mudou a cor do fundo */
 
 h1 {
     text-align: center;
-
-}
+} /* faz todos os h1 ficarem centralizados */
 
 h2{
     padding: 15px;
     color: white;
-}
+} /* faz todos os h2 ficarem da cor branca e cria uma "margem" em volta de 25px */
 
 nav {
     background-color: black;
@@ -22,7 +21,7 @@ nav {
     transition: .5s;
     overflow-y: hidden;
     overflow-x: hidden;
-}
+} /* faz todos os nav ter a cor de fundo preta, largura de 250px, aultura q oculpa 100% da pagina, ficar posicionado a esquerda, com uma transição com atraso de 0.5 segundos, faz com que todo conteudo que passe do tamanho da pagina seja ocultado em vez de criar barra de rolagem  */
 
 .menu a,ol {
     text-decoration: none;
@@ -31,22 +30,22 @@ nav {
     color: rgb(13, 188, 211);
     transition: .5s
     
-}
+} /* faz com que todos com a class menu a e todos os ol não tenhom decoração no nome, tira os indicadores de lista, tenham 0 de um espaçamento geral, fiquem com a cor de fonte especifica e possuem uma transição atrasada em 0,5 segundos */
 ol{
     margin: 0;
-}
+} /* faz todos os ol terem magem 0 */
 
 li {
     padding: 5px;
     cursor: pointer;
     margin: 0;
-}
+} /* faz todas os li terem um espaçamento geral de 5px, um cursor diferente quando colocado o mouse em cima e uma margem 0 */
 
 .menu li:hover, button:hover {
     color: white;
     background-color: black;
     border: 2px solid red;
-}
+}/* quando o mouse estiver sobre os li e o botão com a classe menu vão ficar brancos, com fundo preto uma borda vermelha de 2px*/
 
 button {
     background: none;
@@ -57,26 +56,25 @@ button {
     position: absolute;
     left: 10px;
     display: flex;
-
-}
+}/* faz todos os botões ficarem sem fundo, sem borda, com tamanho de 40px, cor preta, curso diferente, com espaçamento de 10px a esquerda */
 
 button:focus ~nav{
     width: 250px;
-}
+} /* muda o tamnho da nav quando o usuario aperta o botão */
 
 /*Para celualr*/
 @media (max-width: 480px) {
     nav {
         width: 0px;
         align-items: flex-start;
-    }
+    }/* faz o nave ficar com 0 de largura e alinha os itens de maneira automatica*/
 
     h1 {
         text-align: left;
-    }
+    }/* faz o h1 ficar a esquerda */
 
     button{
         display: flex;
     }
-}
+}/* quando a tela fica do tamanho de celular ficar com essas configurções */
 
